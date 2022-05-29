@@ -2448,6 +2448,9 @@ dependencies = [
 [[package]]
 name = "ocarina_plugin"
 version = "0.1.0"
+dependencies = [
+ "bevy",
+]
 
 [[package]]
 name = "ogg"
