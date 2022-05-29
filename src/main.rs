@@ -11,11 +11,3 @@ fn main() {
         // .add_plugin(Ocarina)
         .run();
 }
-
-// todo: hold user input
-// fn user_input(keys: Res<Input<KeyCode>>, audio: Res<Audio>, asset_server: Res<AssetServer>) {
-//     if keys.pressed(KeyCode::A) {
-//         let note: Handle<AudioSource> = asset_server.load("ocarina_plugin/assets/ocarina_d_note.ogg");
-//         audio.play(note);
-//     }
-// }
