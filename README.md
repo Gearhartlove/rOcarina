@@ -24,13 +24,13 @@ fn main() {
     let mut app: App = App::new();
     app
         .add_plugins(DefaultPlugins)
-        .add_resource(ocarina_plugin::CustomControls {
+        .insert_resource(ocarina_plugin::CustomControls {
             a_note: KeyCode::R,
             b_note: KeyCode::U,
             d_note: KeyCode::S,
             d_high_note: KeyCode::T,
             f_note: KeyCode::Y,
-        }) 
+        })
         .add_system(ocarina_plugin::ocarina)
         .run();
 }
